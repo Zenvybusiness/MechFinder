@@ -29,3 +29,7 @@ dist-ssr
 
 .env
 .vite
+# SSH keys
+*.pem
+*.key
+id_ed25519*
