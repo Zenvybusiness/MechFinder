@@ -1,0 +1,102 @@
+{
+  "name": "Mechanic",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "title": "Full Name"
+    },
+    "phone": {
+      "type": "string",
+      "title": "Phone Number"
+    },
+    "password": {
+      "type": "string",
+      "title": "Password"
+    },
+    "shop_name": {
+      "type": "string",
+      "title": "Shop Name"
+    },
+    "address": {
+      "type": "string",
+      "title": "Address"
+    },
+    "city": {
+      "type": "string",
+      "title": "City"
+    },
+    "pin_code": {
+      "type": "string",
+      "title": "Pin Code"
+    },
+    "profile_photo": {
+      "type": "string",
+      "title": "Profile Photo URL"
+    },
+    "shop_photos": {
+      "type": "array",
+      "title": "Shop Photos",
+      "items": {
+        "type": "string"
+      }
+    },
+    "specialties": {
+      "type": "array",
+      "title": "Specialties",
+      "items": {
+        "type": "string"
+      }
+    },
+    "status": {
+      "type": "string",
+      "title": "Status",
+      "enum": [
+        "pending",
+        "approved",
+        "rejected"
+      ],
+      "default": "pending"
+    },
+    "payment_status": {
+      "type": "string",
+      "title": "Payment Status",
+      "enum": [
+        "unpaid",
+        "paid"
+      ],
+      "default": "unpaid"
+    },
+    "payment_amount": {
+      "type": "number",
+      "title": "Payment Amount"
+    },
+    "payment_date": {
+      "type": "string",
+      "title": "Payment Date"
+    },
+    "average_rating": {
+      "type": "number",
+      "title": "Average Rating",
+      "default": 0
+    },
+    "total_reviews": {
+      "type": "number",
+      "title": "Total Reviews",
+      "default": 0
+    },
+    "is_active": {
+      "type": "boolean",
+      "title": "Is Active",
+      "default": false
+    }
+  },
+  "required": [
+    "name",
+    "phone",
+    "shop_name",
+    "address",
+    "city",
+    "pin_code"
+  ]
+}

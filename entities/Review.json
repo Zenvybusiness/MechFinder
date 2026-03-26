@@ -1,0 +1,34 @@
+{
+  "name": "Review",
+  "type": "object",
+  "properties": {
+    "mechanic_id": {
+      "type": "string",
+      "title": "Mechanic ID"
+    },
+    "reviewer_name": {
+      "type": "string",
+      "title": "Reviewer Name"
+    },
+    "reviewer_email": {
+      "type": "string",
+      "title": "Reviewer Email"
+    },
+    "rating": {
+      "type": "number",
+      "title": "Rating",
+      "minimum": 1,
+      "maximum": 5
+    },
+    "comment": {
+      "type": "string",
+      "title": "Comment"
+    }
+  },
+  "required": [
+    "mechanic_id",
+    "reviewer_name",
+    "rating",
+    "comment"
+  ]
+}

@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --font-heading: 'Poppins', sans-serif;
+    --font-body: 'Inter', sans-serif;
+
+    --background: 220 20% 97%;
+    --foreground: 220 13% 13%;
+    --card: 0 0% 100%;
+    --card-foreground: 220 13% 13%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 13% 13%;
+    --primary: 224 70% 33%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 220 14% 94%;
+    --secondary-foreground: 220 13% 30%;
+    --muted: 220 14% 94%;
+    --muted-foreground: 220 9% 46%;
+    --accent: 191 97% 43%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 220 13% 88%;
+    --input: 220 13% 91%;
+    --ring: 224 70% 33%;
+    --chart-1: 224 70% 33%;
+    --chart-2: 191 97% 43%;
+    --chart-3: 220 9% 46%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 0 72% 51%;
+    --radius: 8px;
+  }
+
+  .dark {
+    --background: 220 20% 97%;
+    --foreground: 220 13% 13%;
+  }
+}
+::-webkit-scrollbar-thumb {
+  background: hsl(220 15% 20%);
+  border-radius: 0;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(225 100% 59%);
+}
+
+/* Power bar animation */
+@keyframes power-fill {
+  from { width: 0%; }
+  to { width: var(--fill-width); }
+}
+
+/* Scan line effect */
+@keyframes scan-line {
+  0% { top: 0%; }
+  100% { top: 100%; }
+}
+
+/* Blueprint line wipe */
+@keyframes line-wipe {
+  from { transform: scaleX(0); }
+  to { transform: scaleX(1); }
+}
